@@ -10,11 +10,25 @@ This API returns a collection of basic information about Anime.
 * [Azure Function Core Tools VSCode plugin](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash)
 
 ### Run locally
-Press Start Debugging (F5) in VSCode. If you haven't alredy installed Azure Function Core Tools you will be promted to do so.
+In your local.settings.json in the *values* object speciy *CosmosDBConnection* e.g.
 
-This will deploy then be able to all the function at GET http://localhost:7071/api/HttpTriggerAnime
+```
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "CosmosDBConnection": "your-cosmosdb-connection-string"
+  }
+```
+
+Follow the Medium article on how to setup the Cosmos Db database.
+
+Once comleted press Start Debugging (F5) in VSCode. If you haven't alredy installed Azure Function Core Tools you will be promted to do so.
+
+This will run the function in the emulator and you can call the function at GET http://localhost:7071/api/httptriggeranime
 
 ### How to deploy
+Follow the Medium article to deploy all the dependancies. You will need to add in *CosmosDBConnection* app setting to the Function App in Azure with your Cosmos Db connection string as the value.
+
 * Go to the *Azure* tab in VSCode.
 * In the *FUNCTIONS* section select 'Deploy to function app'
 * Follow the onscreen instructions to select the subscription and function app to deploy it to.
