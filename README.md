@@ -1,5 +1,5 @@
 # Azure free full stack app demo: API
-This is a .net core Azure function built as part of the [Medium article]().
+This is a .net core Azure function built as part of the [Medium article](https://medium.com/@ashley.kelham/developing-a-startup-on-azure-for-under-1-407c3b290d36). The articles explains the infrastrcuture setup.
 
 This API returns a collection of basic information about Anime.
 
