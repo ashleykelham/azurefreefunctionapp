@@ -1,5 +1,5 @@
 # Azure free full stack app demo: API
-This is a .net core Azure function built as part of the [Medium article](https://medium.com/@ashley.kelham/developing-a-startup-on-azure-for-under-1-407c3b290d36). The articles explains the infrastrcuture setup.
+This is a .net core Azure function built as part of the [Medium article](hhttps://medium.com/@ashley.kelham/controlling-the-usage-of-your-startup-on-azure-for-under-1-using-api-management-64a93ba71752). T
 
 It shows how to deploy a full stack app for very little money in Azure.
 

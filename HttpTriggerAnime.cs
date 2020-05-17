@@ -20,7 +20,7 @@ namespace ashleykelham
         const string collectionName = "anime";
         [FunctionName("HttpTriggerAnime")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
               [CosmosDB(
                 databaseName: databaseName,
                 collectionName: collectionName,
